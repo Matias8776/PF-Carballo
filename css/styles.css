@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .navBar li a{
     text-decoration: none;
     display: block;
     padding: 6px 30px;
-    font-family: "oswald";
+    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    
+
 }
+
 .navBar li{
     display: inline-block;
 }
+
 .menu{
     background: rgb(76,76,76);
     background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
@@ -27,15 +31,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
     height: 40px;
 }
+
 .barra{
     color: white;
     padding: 1px;
 }
+
 .navBar li a:hover{
     color: rgb(199, 199, 199);
     background-color: rgba(0, 0, 0, 0.2);
     animation: 1s ms 1;
 }
+
 @keyframes ms{
     0%{
         opacity: 0;
@@ -47,6 +54,7 @@
     list-style: none;
     text-align: center;
 }
+
 .container{
     display: block;
     text-align: center;
@@ -55,7 +63,8 @@
     background-size: 3%;
     animation: movimiento 60s infinite linear alternate;
     height: 160px;
-}   
+}
+
 @keyframes movimiento{
     from{
         background-position: left;
@@ -64,6 +73,91 @@
         background-position: right;
     }
 }
+
 .container img{
     height: 160px;
 }
+
+.biografia-pos{
+    margin: 5vh;
+}
+
+.biografia{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.pie{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.pie2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inicio img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 0 -160px;
+    animation: zoomImagen 2s ease-out;
+}
+
+@keyframes zoomImagen{
+    0%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.inicio h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    animation: aparecer 2s ease-out 2s forwards;
+}
+
+@keyframes aparecer{
+    100%{
+        opacity: 1;
+    }
+}
+
+.inicio{
+    position: relative;
+    height: 69vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 0 3rem 1rem black inset;
+}
+
