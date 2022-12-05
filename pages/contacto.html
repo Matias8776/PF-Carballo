@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
+        <div class="background">
         <header>
             <section class="container">
                 <img src="../assets/img/hroes-del-silencio-54cc07c0083b9.png" alt="Banner">
@@ -27,7 +28,35 @@
             </nav>
         </header>
         <main>
-
+            <section class="parrafo-sugerencias">
+                <p>Agradecemos cualquier sugerencia de contenido o material que les gustaria que incorporemos al sitio. <br>Seran bienvenidas!</p>
+            </section>
+            <section>
+                <form action="" method="post" class="formulario">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="nombre">
+                            <p>Nombre</p>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                        </label>
+                        <label for="apellido">
+                            <p>Apellido</p>
+                            <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                        </label>
+                        <label for="email">
+                            <p>E-mail</p>
+                            <input type="email" id="email" placeholder="Ingrese su e-mail" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sugerencias</legend>
+                        <label for="sugerencias">
+                        </label>
+                        <textarea id="sugerencias" placeholder="Ingrese sus sugerencias"></textarea>
+                        <input type="submit" value="Enviar" class="enviar">
+                    </fieldset>
+                </form>
+            </section>
         </main>
         <footer>
             <section class="pie">
@@ -35,11 +64,14 @@
                     Unete a nuestras redes sociales!
                 </p>
             </section>
-            <section class="pie2">
-                <a href="https://www.facebook.com/HeroesdelSilencioOficial/"><img src="../assets/img/facebook.png" alt="Facebook"></a>
-                <a href="https://twitter.com/hds__oficial"><img src="../assets/img/twitter.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/heroesdelsilenciook/?hl=es"><img src="../assets/img/instagram.png" alt="Instagram"></a>
+            <section>
+                <ul class="pie2">
+                    <li><a href="https://www.facebook.com/HeroesdelSilencioOficial/"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/hds__oficial"><img src="../assets/img/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/heroesdelsilenciook/?hl=es"><img src="../assets/img/instagram.png" alt="Instagram"></a></li>
+                </ul>
             </section>
         </footer>
+        </div>
     </body>
 </html>
