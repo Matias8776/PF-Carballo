@@ -15,6 +15,8 @@ body{
     background-color: black;
 }
 
+/* Header */
+
 .background{
     background-image: url(../assets/img/index.jpg);
 }
@@ -98,40 +100,7 @@ header{
     height: 160px;
 }
 
-.biografia-pos{
-    margin: 10vh 50vh;
-}
-
-.biografia{
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: white;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.pie{
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-.pie2{
-    margin-top: 18px;
-    display: flex;
-}
-
-.pie2 li{
-    display: block;
-    padding: 0 15px;
-}
+/* index */
 
 .inicio img{
     height: 100vh;
@@ -187,6 +156,21 @@ footer{
     box-shadow: 0 0 3rem 1rem black inset;
 }
 
+/* biografia */
+
+.biografia-pos{
+    margin: 10vh 50vh;
+}
+
+.biografia{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* discografia */
+
 .discos{
     width: 100%;
     color: white;
@@ -201,18 +185,18 @@ footer{
 }
 
 .cards{
-    padding: 80px 100px;
+    padding: 60px 150px;
     display: flex;
     flex-direction: column;
 }
 
 .cards img{
-    width: 480px;
-    height: 480px;
+    width: 400px;
+    height: 400px;
 }
 
 .cards iframe{
-    width: 480px;
+    width: 400px;
     height: 240px;
 }
 
@@ -222,6 +206,8 @@ footer{
     padding-bottom: 20px;
     text-align: center;
 }
+
+/* galeria */
 
 .column img{
     width: 100%;
@@ -238,11 +224,13 @@ footer{
     padding: 5px;
 }
 
+/* contacto */
+
 .parrafo-sugerencias p{
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 5vh;
+    margin-top: 8vh;
     font-size: 1.2rem;
 }
 
@@ -310,4 +298,30 @@ footer{
 
 .enviar:hover{
     background: rgb(100, 100, 100);
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.pie2{
+    margin-top: 18px;
+    display: flex;
+}
+
+.pie2 li{
+    display: block;
+    padding: 0 15px;
 }
