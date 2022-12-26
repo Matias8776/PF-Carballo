@@ -209,19 +209,37 @@ header{
 
 /* galeria */
 
-.column img{
+/* .column img{
     width: 100%;
     margin-top: 10px;
-}
+} */
 
-.galeria{
+/* .galeria{
     display: flex;
     padding: 100px;
-}
+} */
 
-.column{
+/* .column{
     flex: 25%;
     padding: 5px;
+} */
+
+.galeria{
+    padding: 16px;
+}
+
+.carrusel img{
+    width: 1500px;
+    height: 600px;
+}
+
+.carrusel{
+    display: flex;
+    overflow-y: auto;
+}
+
+.carrusel:hover{
+    cursor: pointer;
 }
 
 /* contacto */
