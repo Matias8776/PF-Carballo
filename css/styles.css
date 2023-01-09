@@ -138,6 +138,10 @@ font-family: 'Roboto', sans-serif;
         width: 100%;
         height: 100%;
     }
+    .inicio h1{
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
 @media only screen and (max-width: 428px){
@@ -148,6 +152,10 @@ font-family: 'Roboto', sans-serif;
         width: 100%;
         height: 100%;
     }
+    .inicio h1{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
 }
 
 /* biografia */
@@ -157,13 +165,30 @@ font-family: 'Roboto', sans-serif;
     width: 75%;
     height: 100%;
     padding: 40px 0;
+    display: grid;
+    grid-template-areas: 
+        "lateral biografia biografia";
+    gap: 10px;
+}
+
+.lateral{
+    grid-area: lateral;
+    opacity: 0.75;
 }
 
 .biografia{
+    grid-area: biografia;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: white;
+}
+
+@media only screen and (max-width: 1280px){
+    .lateral{
+        display: none;
+        
+    }
 }
 
 @media only screen and (max-width: 420px){
@@ -185,10 +210,29 @@ font-family: 'Roboto', sans-serif;
 
 .card-group{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4";
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
 }
 
 .cards{
@@ -213,9 +257,35 @@ font-family: 'Roboto', sans-serif;
     padding-bottom: 20px;
     text-align: center;
 }
-
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 1280px){
     .cards{
+        padding: 60px 80px;
+    }
+
+    .cards img{
+        width: 300px;
+        height: 300px;
+    }
+    .cards iframe{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .cards{
+        padding: 60px 50px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .card-group{
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+    }
+    /* .cards{
         padding: 30px 0;
     }
     .cards img{
@@ -224,7 +294,7 @@ font-family: 'Roboto', sans-serif;
     }
     .cards iframe{
         width: 300px;
-    }
+    } */
 }
 
 /* contacto */
@@ -337,4 +407,22 @@ font-family: 'Roboto', sans-serif;
 .pie2 li{
     display: block;
     padding: 0 15px;
+}
+
+@media only screen and (max-width: 960px){
+    .pie{
+        font-size: 18px;
+    }
+    .pie2 li{
+        padding: 0 10px;
+    }
+    .facebook-img{
+        content: url(../assets/img/facebook1.png);
+    }
+    .twitter-img{
+        content: url(../assets/img/twitter1.png);
+    }
+    .instagram-img{
+        content: url(../assets/img/instagram1.png);
+    }
 }
