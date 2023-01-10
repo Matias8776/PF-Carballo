@@ -285,16 +285,13 @@ font-family: 'Roboto', sans-serif;
         "card3"
         "card4";
     }
-    /* .cards{
-        padding: 30px 0;
+}
+
+/* galeria */
+@media only screen and (max-width: 420px){
+    .galeria{
+        margin-top: 60%;
     }
-    .cards img{
-        width: 300px;
-        height: 300px;
-    }
-    .cards iframe{
-        width: 300px;
-    } */
 }
 
 /* contacto */
