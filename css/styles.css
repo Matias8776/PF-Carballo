@@ -236,7 +236,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .cards{
-    padding: 60px 150px;
+    padding: 40px 150px;
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +259,7 @@ font-family: 'Roboto', sans-serif;
 }
 @media only screen and (max-width: 1280px){
     .cards{
-        padding: 60px 80px;
+        padding: 40px 80px;
     }
 
     .cards img{
@@ -273,7 +273,7 @@ font-family: 'Roboto', sans-serif;
 
 @media only screen and (max-width: 960px){
     .cards{
-        padding: 60px 50px;
+        padding: 40px 50px;
     }
 }
 
@@ -288,10 +288,10 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* galeria */
-@media only screen and (max-width: 420px){
-    .galeria{
-        margin-top: 60%;
-    }
+
+.galeria{
+    width: 100%;
+    margin-top: 4vh;
 }
 
 /* contacto */
@@ -300,7 +300,7 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 8vh;
+    margin-top: 4vh;
     font-size: 1.2rem;
 }
 
