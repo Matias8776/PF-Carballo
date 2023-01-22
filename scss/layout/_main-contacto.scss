@@ -1,0 +1,80 @@
+.parrafo-sugerencias {
+	p {
+		text-align: center;
+		color: white;
+		font-family: $typo-principal;
+		margin-top: 4vh;
+		font-size: 1.2rem;
+	}
+}
+.formulario {
+	background: rgba(76,76,76,.6);
+	width: 90%;
+	max-width: 650px;
+	margin: auto;
+	padding: 5px 35px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px;
+	text-align: center;
+	fieldset {
+		border-color: rgb(155, 155, 155);
+		legend {
+			display: block;
+			color: white;
+			font-size: 1.2rem;
+			font-family: $typo-principal;
+			position: relative;
+			padding: 14px 0;
+			text-align: center;
+			font-weight: bold;
+		}
+		label {
+			display: block;
+			color: white;
+			font-size: 1rem;
+			font-family: $typo-principal;
+			position: relative;
+		}
+		input {
+			background: rgba(76,76,76,.7);
+			border: none;
+			outline: none;
+			border-bottom: 2px solid white;
+			width: 90%;
+			padding: 12px;
+			margin-bottom: 20px;
+			border-radius: 2px;
+			font-size: 14px;
+			color: white;
+		}
+		textarea {
+			background: rgba(76,76,76,.7);
+			border: none;
+			outline: none;
+			border-bottom: 2px solid white;
+			width: 90%;
+			padding: 12px;
+			margin-bottom: 20px;
+			border-radius: 2px;
+			font-size: 14px;
+			color: white;
+		}
+	}
+}
+#enviar {
+	width: 25%;
+	font-family: $typo-principal;
+	outline: none;
+	font-size: 1rem;
+	border: none;
+	padding: 15px 0;
+	cursor: pointer;
+	margin-bottom: 20px;
+	background: rgb(76,76,76);
+	color: white;
+	transition: all .5s ease;
+	&:hover {
+		background: rgb(100, 100, 100);
+	}
+}
