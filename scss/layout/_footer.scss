@@ -1,0 +1,21 @@
+.footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.pie {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: $typo-secundario;
+	font-weight: bold;
+	color: white;
+}
+.pie2 {
+	margin-top: -8px;
+	display: flex;
+	padding-left: 0rem;
+	li {
+		display: block;
+		padding: 0 15px;
+	}
+}

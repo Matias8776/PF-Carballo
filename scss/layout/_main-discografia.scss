@@ -1,0 +1,43 @@
+.discos {
+	width: 100%;
+	color: white;
+}
+.card-group {
+	width: 100%;
+	display: grid;
+	grid-template-areas: "card1 card2" "card3 card4";
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card1 {
+	grid-area: card1;
+}
+.card2 {
+	grid-area: card2;
+}
+.card3 {
+	grid-area: card3;
+}
+.card4 {
+	grid-area: card4;
+}
+.cards {
+	padding: 40px 150px;
+	display: flex;
+	flex-direction: column;
+	img {
+		width: 400px;
+		height: 400px;
+	}
+	iframe {
+		width: 400px;
+		height: 240px;
+	}
+	h2 {
+		font-family: $typo-principal;
+		font-size: 30px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+}
