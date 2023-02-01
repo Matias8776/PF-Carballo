@@ -58,6 +58,16 @@
 		grid-template-areas: "card1" "card2" "card3" "card4";
 	}
 }
+@media only screen and (max-width: 760px) {
+	.galeria {
+		margin: 20px;
+		margin-top: 40px;
+	}
+	.cards {
+		padding: 0;
+		margin-top: 40px;
+	}
+}
 @media only screen and (max-width: 428px) {
 	.inicio {
 		img {
@@ -77,8 +87,8 @@
 	.banner {
 		height: 120px;
 		img {
-			width: 300px;
-			height: 120px;
+			width: 302px;
+			height: 117px;
 		}
 	}
 	.biografia-pos {
@@ -86,7 +96,6 @@
 	}
 	.biografia {
 		font-size: 0.8rem;
-		text-align: center;
 	}
 	.parrafo-sugerencias {
 		p {
